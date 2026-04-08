@@ -10,15 +10,29 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">
-                <h1>LEOPARD</h1>
+            <a class="nav-brand" href="#home" aria-label="Leopard Secure Services LTD home">
+                <img src="./images/logo.png" alt="Leopard Secure Services LTD">
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="primary-navigation">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+            <div class="nav-contact">
+                <span class="nav-contact-label">Have any questions?</span>
+                <a class="nav-contact-phone" href="tel:+441217511142">01217511142</a>
+            </div>
         </div>
     </nav>
 
@@ -262,6 +276,31 @@
     </footer>
 
     <script>
+        // Mobile navigation toggle
+        const navbar = document.querySelector('.navbar');
+        const navToggle = document.querySelector('.nav-toggle');
+
+        if (navToggle && navbar) {
+            const setNavState = (isOpen) => {
+                navbar.classList.toggle('is-open', isOpen);
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+            };
+
+            navToggle.addEventListener('click', () => {
+                setNavState(!navbar.classList.contains('is-open'));
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => setNavState(false));
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768) {
+                    setNavState(false);
+                }
+            });
+        }
+
         // Counter Animation Function
         function animateCounters() {
             const counters = document.querySelectorAll('.counter');
