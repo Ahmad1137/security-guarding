@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leopard Secure Services | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script defer src="layout.js"></script>
+</head>
+<body class="contact-page" data-page="contact">
+    <div id="site-header"></div>
+
+    <header class="contact-hero" id="top">
+        <div class="container">
+            <span class="title-line"></span>
+            <h1>Contact us</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-main" id="contact-section">
+            <div class="container form-layout">
+                <div class="intro-copy">
+                    <h2>Feel Free To Contact Us For Any Questions</h2>
+                    <p>
+                        Leopard secure services we prioritize your safety above all else. Our team of
+                        security experts is ready to guide you through our comprehensive range of
+                        services and develop a personalized security plan tailored to your specific
+                        needs. Contact us now to schedule a consultation and explore how our security
+                        services can meet and exceed your expectations.
+                    </p>
+                </div>
+
+                <form class="contact-page-form" action="#" method="post">
+                    <p class="form-note">Fields marked with an <strong>*</strong> are required</p>
+
+                    <label for="name">Name <strong>*</strong></label>
+                    <input id="name" name="name" type="text" required>
+
+                    <label for="email">Email <strong>*</strong></label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label for="company">Company</label>
+                    <input id="company" name="company" type="text">
+
+                    <label for="service">Services</label>
+                    <select id="service" name="service">
+                        <option value="concierge">Concierge</option>
+                        <option value="construction">Construction Security</option>
+                        <option value="door">Door Supervisors</option>
+                        <option value="event">Event Security</option>
+                        <option value="mobile">Mobile Patrols</option>
+                        <option value="retail">Retail Security</option>
+                    </select>
+
+                    <label for="message">Message <strong>*</strong></label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="quick-contact" aria-label="Office details">
+            <div class="container quick-grid">
+                <div>
+                    <h3>Head Office</h3>
+                    <p>708 Alum Rock Road, Birmingham, B8 3NU</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@leopardsecureservices.com">info@leopardsecureservices.com</a></p>
+                </div>
+                <div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+441217511142">01217511142</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section" aria-label="Google map">
+            <div class="container">
+                <div class="map-frame">
+                    <iframe
+                        title="Leopard Secure Services location"
+                        src="https://maps.google.com/maps?q=708%20Alum%20Rock%20Road%2C%20Birmingham%2C%20B8%203NU&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+</body>
+</html>
