@@ -1,8 +1,8 @@
 const HEADER_FALLBACK = `
 <nav class="navbar" aria-label="Primary navigation">
     <div class="container">
-        <a class="nav-brand" href="index.html#home" aria-label="Leopard Secure Services home">
-            <img src="./images/logo.png" alt="Leopard Secure Services LTD">
+        <a class="nav-brand" href="index.html#home" aria-label="Haidery Guarding LTD home">
+            <img src="./images/logo.png" alt="Haidery Guarding LTD">
         </a>
 
         <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
@@ -14,7 +14,7 @@ const HEADER_FALLBACK = `
         <div class="nav-menu" id="primary-navigation">
             <ul class="nav-links">
                 <li><a data-page="home" href="index.html#home">Home</a></li>
-                <li><a data-page="services" href="index.html#services">Services</a></li>
+                <li><a data-page="services" href="services.html">Services</a></li>
                 <li><a data-page="about" href="about.html">About</a></li>
                 <li><a data-page="contact" href="contact.html">Contact</a></li>
             </ul>
@@ -33,8 +33,8 @@ const FOOTER_FALLBACK = `
     <div class="container">
         <div class="footer-grid">
             <div class="footer-section">
-                <div class="footer-logo"><img src="./images/logo.png" alt="Leopard Secure Services Logo"></div>
-                <p>Your trusted security partner in Seattle.</p>
+                <div class="footer-logo"><img src="./images/logo.png" alt="Haidery Guarding LTD logo"></div>
+                <p>UK registered security company delivering reliable and professional solutions.</p>
                 <div class="social-links">
                     <a href="#"><img src="./images/facebook-app-symbol.png" alt="Facebook"></a>
                     <a href="#"><img src="./images/message.png" alt="LinkedIn"></a>
@@ -46,25 +46,25 @@ const FOOTER_FALLBACK = `
                 <h4>Company</h4>
                 <ul>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="#">Team</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
                 <h4>Address</h4>
-                <p>256 Aurora Ave North, Seattle<br>WA 98109, United States</p>
+                <p>708 Alum Rock Road, Birmingham<br>B8 3NU, United Kingdom</p>
             </div>
 
             <div class="footer-section">
                 <h4>Contact</h4>
-                <p><a href="tel:+447526551885"> +44 7526551885</a></p>
-                <p><a href="mailto:info@yourcompanyname.co.uk">info@yourcompanyname.co.uk</a></p>
+                <p><a href="tel:+441217511142">01217511142</a></p>
+                <p><a href="mailto:info@leopardsecureservices.com">info@leopardsecureservices.com</a></p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 haidery guarding LTD. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p>&copy; 2026 Haidery Guarding LTD. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </div>
 </footer>
