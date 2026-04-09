@@ -28,6 +28,55 @@ body {
     background-color: var(--white);
 }
 
+/* ==========================================
+   Motion
+   ========================================== */
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes soft-float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes nav-drop {
+    from {
+        opacity: 0;
+        transform: translateY(-16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-animate] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+}
+
+[data-animate].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -109,6 +158,7 @@ p {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     z-index: 1000;
+    animation: nav-drop 0.6s ease both;
 }
 
 .navbar .container {
@@ -247,11 +297,17 @@ p {
 .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    animation: fade-up 0.7s ease both;
 }
 
 .hero-content p {
     font-size: 1.3rem;
     margin-bottom: 30px;
+    animation: fade-up 0.7s ease 0.14s both;
+}
+
+.hero-content .btn {
+    animation: fade-up 0.7s ease 0.24s both;
 }
 
 .hero-contact {
@@ -267,6 +323,7 @@ p {
     align-items: center;
     gap: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    animation: fade-up 0.8s ease 0.32s both, soft-float 4s ease-in-out 1.1s infinite;
 }
 
 .phone-icon {
@@ -410,6 +467,26 @@ border-radius: 20px;
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card,
+.feature-card,
+.stat-card,
+.footer-section,
+.contact-form,
+.contact-page-form,
+.module-card,
+.pillar-card,
+.showcase-item {
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.feature-card:hover,
+.stat-card:hover,
+.module-card:hover,
+.pillar-card:hover,
+.showcase-item:hover {
+    transform: translateY(-6px);
 }
 
 .service-icon {
@@ -665,6 +742,19 @@ border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.24);
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    [data-animate] {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .footer-bottom a {

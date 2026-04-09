@@ -147,8 +147,58 @@ function markActiveNavItem() {
     }
 }
 
+function initScrollAnimations() {
+    const animatedTargets = Array.from(
+        document.querySelectorAll(
+            '.stat-card, .about-grid > *, .service-card, .feature-card, .contact-grid > *, .footer-section, .pillar-card, .showcase-item, .module-card, .solution-grid > *, .form-layout > *, .quick-grid > div, .map-frame'
+        )
+    );
+
+    if (animatedTargets.length === 0) {
+        return;
+    }
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) {
+        animatedTargets.forEach((el) => {
+            el.setAttribute('data-animate', '');
+            el.classList.add('is-visible');
+        });
+        return;
+    }
+
+    animatedTargets.forEach((el) => {
+        const parent = el.parentElement;
+        const siblings = parent ? Array.from(parent.children) : [];
+        const siblingIndex = Math.max(0, siblings.indexOf(el));
+        const delay = Math.min(siblingIndex * 70, 350);
+
+        el.setAttribute('data-animate', '');
+        el.style.setProperty('--reveal-delay', `${delay}ms`);
+    });
+
+    const observer = new IntersectionObserver(
+        (entries, obs) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    obs.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.16,
+            rootMargin: '0px 0px -8% 0px'
+        }
+    );
+
+    animatedTargets.forEach((el) => observer.observe(el));
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     injectSharedLayout().catch((error) => {
         console.error('Failed to load shared layout:', error);
     });
+
+    initScrollAnimations();
 });
