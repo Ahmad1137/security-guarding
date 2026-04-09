@@ -22,7 +22,7 @@ const HEADER_FALLBACK = `
 
         <div class="nav-contact">
             <span class="nav-contact-label">Have any questions?</span>
-            <a class="nav-contact-phone" href="tel:+441217511142">01217511142</a>
+            <a class="nav-contact-phone" href="tel:+447526551885">+44 7526551885</a>
         </div>
     </div>
 </nav>
@@ -58,13 +58,18 @@ const FOOTER_FALLBACK = `
 
             <div class="footer-section">
                 <h4>Contact</h4>
-                <p><a href="tel:+441217511142">01217511142</a></p>
-                <p><a href="mailto:info@leopardsecureservices.com">info@leopardsecureservices.com</a></p>
+                <p><a href="tel:+447526551885">+44 7526551885</a></p>
+                <p><a href="mailto:info@haideryguardingltd.co.uk">info@haideryguardingltd.co.uk</a></p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Haidery Guarding LTD. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <div class="footer-bottom-left">
+                <p>Copyright &copy; 2026 HAIDERY GUARDING LTD.</p>
+              
+                <p>Company Registration No : 17123919</p>
+                <p>Company Representative : M.ABUZAR</p>
+            </div>
         </div>
     </div>
 </footer>
