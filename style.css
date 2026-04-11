@@ -862,7 +862,14 @@ border-radius: 20px;
         text-align: center;
     }
 
+    .about-image {
+        display: flex;
+        justify-content: center;
+    }
+
     .placeholder-image {
+        width: min(94%, 360px);
+        margin: 0 auto;
         height: 300px;
     }
 
@@ -879,6 +886,16 @@ border-radius: 20px;
     .features-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .services-grid {
+        justify-items: center;
+    }
+
+    .services-grid .service-card {
+        width: min(92%, 340px);
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer-bottom {
@@ -1006,6 +1023,13 @@ border-radius: 20px;
 
     .service-icon {
         font-size: 2.5rem;
+    }
+
+    .service-icon img {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .feature-icon {
