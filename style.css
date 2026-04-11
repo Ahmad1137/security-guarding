@@ -490,8 +490,18 @@ border-radius: 20px;
 }
 
 .service-icon {
-    font-size: 3rem;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
     margin-bottom: 15px;
+}
+
+.service-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .service-card h3 {
@@ -1025,11 +1035,8 @@ border-radius: 20px;
         font-size: 2.5rem;
     }
 
-    .service-icon img {
-        display: block;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+    .service-icon {
+        height: 190px;
     }
 
     .feature-icon {
