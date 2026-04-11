@@ -31,6 +31,7 @@
 
 .about-intro {
     padding: 52px 20px 48px;
+    
 }
 
 .narrow {
@@ -86,6 +87,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 44px;
+    text-align: center;
 }
 
 .solution-copy h2 {
@@ -134,10 +136,11 @@
 
     .about-intro {
         padding: 36px 20px;
+        text-align: center;
     }
 
     .about-intro h2 {
-        text-align: left;
+        text-align: center;
     }
 
     .stats-row {

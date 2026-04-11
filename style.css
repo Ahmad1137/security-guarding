@@ -702,6 +702,12 @@ border-radius: 20px;
     height: 25px;
 }
 
+.company-no {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    /* color: #7A7A7A; */
+}
+
 
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.18);
@@ -721,6 +727,7 @@ border-radius: 20px;
 }
 
 .copyright {
+     border-top: 1px solid rgba(255, 255, 255, 0.18);
     color: #ffffff;
     font-weight: 600;
     margin: auto;
@@ -852,6 +859,7 @@ border-radius: 20px;
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 30px;
+        text-align: center;
     }
 
     .placeholder-image {
@@ -894,6 +902,10 @@ border-radius: 20px;
         white-space: normal;
         text-align: left;
     }
+
+    .footer-section h4 {
+   font-size: 1rem;
+}
 }
 
 /* Mobile (480px and below) */

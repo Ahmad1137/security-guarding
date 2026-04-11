@@ -22,7 +22,7 @@ const HEADER_FALLBACK = `
 
         <div class="nav-contact">
             <span class="nav-contact-label">Have any questions?</span>
-            <a class="nav-contact-phone" href="tel:+447526551885">+44 7526551885</a>
+            <a class="nav-contact-phone" href="tel:+447526551885">07526551885</a>
         </div>
     </div>
 </nav>
@@ -53,12 +53,12 @@ const FOOTER_FALLBACK = `
 
             <div class="footer-section">
                 <h4>Address</h4>
-                <p>708 Alum Rock Road, Birmingham<br>B8 3NU, United Kingdom</p>
+                <p>OFFICE NO 01: 97 PERYYN ROAD, GREATER LONDON, UNITED KINGDOM</p>
             </div>
 
             <div class="footer-section">
                 <h4>Contact</h4>
-                <p><a href="tel:+447526551885">+44 7526551885</a></p>
+                <p><a href="tel:+447526551885">07526551885</a></p>
                 <p><a href="mailto:info@haideryguardingltd.co.uk">info@haideryguardingltd.co.uk</a></p>
             </div>
         </div>
