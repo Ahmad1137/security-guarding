@@ -39,6 +39,13 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
+    justify-items: center;
+}
+
+@media (min-width: 1024px) {
+    .pillars-grid .pillar-card:nth-child(n+4) {
+        grid-row: 2 / 3;
+    }
 }
 
 .pillar-card {
