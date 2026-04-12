@@ -1,7 +1,7 @@
 const FORM_SELECTOR = '.contact-page-form';
 const STATUS_SELECTOR = '.form-status';
 const SUCCESS_REDIRECT = '/thanks.html';
-const LOCAL_API_ORIGIN = 'https://leopard-services.pages.dev';
+const LOCAL_API_ORIGIN = 'https://haideryguardingltd.co.uk';
 
 function setFormStatus(form, message, state) {
     const statusEl = form.querySelector(STATUS_SELECTOR);
