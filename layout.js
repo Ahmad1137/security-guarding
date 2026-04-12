@@ -60,6 +60,7 @@ const FOOTER_FALLBACK = `
                 <h4>Contact</h4>
                 <p><a href="tel:+447526551885">07526551885</a></p>
                 <p><a href="mailto:info@haideryguardingltd.co.uk">info@haideryguardingltd.co.uk</a></p>
+                <p><a href="mailto:sales@haideryguardingltd.co.uk">sales@haideryguardingltd.co.uk</a></p>
             </div>
         </div>
 
