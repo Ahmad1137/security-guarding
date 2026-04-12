@@ -178,7 +178,7 @@ p {
 }
 
 .nav-brand img {
-    width: 120px;
+    width: 100px;
     height: auto;
     display: block;
 }
@@ -663,7 +663,7 @@ border-radius: 20px;
    
 }
 .footer-logo img{
-   width: 150px;
+   width: 110px;
 }
 
 .footer-section h4 {
@@ -938,7 +938,7 @@ border-radius: 20px;
 /* Mobile (480px and below) */
 @media (max-width: 480px) {
     .nav-brand img {
-        width: 86px;
+        width: 75px;
     }
 
     .nav-toggle {
