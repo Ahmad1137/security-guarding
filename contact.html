@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
     <script defer src="layout.js"></script>
+    <script defer src="contact-form.js"></script>
 </head>
 <body class="contact-page" data-page="contact">
     <div id="site-header"></div>
@@ -34,10 +35,8 @@
                     </p>
                 </div>
 
-                <form class="contact-page-form" action="https://formsubmit.co/info@haideryguardingltd.co.uk" method="POST">
-                    <input type="hidden" name="_subject" value="New enquiry from Contact page">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://leopard-services.pages.dev/thanks.html">
+                <form class="contact-page-form" action="/api/contact" method="POST" novalidate>
+                    <input type="hidden" name="subject" value="New enquiry from Contact page">
 
                     <p class="form-note">Fields marked with an <strong>*</strong> are required</p>
 
@@ -65,6 +64,11 @@
 
                     <label for="message">Message <strong>*</strong></label>
                     <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <label class="hp-field" for="company_website" aria-hidden="true">Website</label>
+                    <input class="hp-field" id="company_website" name="company_website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                    <p class="form-status" aria-live="polite"></p>
 
                     <button type="submit">Submit</button>
                 </form>

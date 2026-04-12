@@ -121,6 +121,38 @@
     background: #21252c;
 }
 
+.contact-page-form button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.form-status {
+    margin: 2px 0 0;
+    min-height: 1.35em;
+    font-size: 0.92rem;
+    font-weight: 500;
+}
+
+.form-status[data-state="pending"] {
+    color: #2f5670;
+}
+
+.form-status[data-state="success"] {
+    color: #1e6b35;
+}
+
+.form-status[data-state="error"] {
+    color: #b13b3b;
+}
+
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 .quick-contact {
     background: #0d5f94;
     padding: 30px 0;
